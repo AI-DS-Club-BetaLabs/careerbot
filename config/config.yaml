@@ -1,0 +1,7 @@
+data: artifacts/data/
+artifacts: artifacts/
+
+scraper:
+  xpath: /html/body/table/tbody/tr[2]/td/table/tbody/tr[2]/td/center/table/tbody/tr[1]/td[3]/table/tbody/tr[4]
+  career_url: https://www.myplan.com/careers/browse-alphabetically.html?letter=all&sort=titles&page=all
+  base_url: https://www.myplan.com

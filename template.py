@@ -9,6 +9,7 @@ project_name = "careerbot"
 
 list_of_files = [
     ".github/workflows/.gitkeep", 
+    "artifacts/"
     f"src/{project_name}/__init__.py",
     f"src/{project_name}/components/__init__.py",
     "src/utils/__init__.py",

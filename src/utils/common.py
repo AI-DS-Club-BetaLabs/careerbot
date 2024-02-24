@@ -5,7 +5,7 @@ from logger import logger
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path 
-
+from dotenv import load_dotenv
 
 
 @ensure_annotations
@@ -47,3 +47,22 @@ def create_directories(path_to_directories: list, verbose=True):
         if verbose:
             logger.info(f"Created directory at: {path}")
             
+@ensure_annotations
+def load_key(key: str) -> str:
+    '''
+    loads the key associated value from environment
+    
+    ## Parameters:
+    
+    key: str
+        the key to get value associated with
+    
+    ## Returns:
+    
+    value: str 
+        associated value from environment
+    '''
+    load_dotenv()
+    
+    value = os.getenv(key)
+    return value 

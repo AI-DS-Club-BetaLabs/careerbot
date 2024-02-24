@@ -1,7 +1,8 @@
 from careerbot.constants import *
 from utils.common import read_yaml, create_directories
 from careerbot.entity import (
-    ScraperConfig
+    ScraperConfig, 
+    LLMConfig
 )
 from pathlib import Path 
 
@@ -44,3 +45,28 @@ class ConfigurationManager:
         )
         
         return data_scraper_config
+
+    def get_llm_config(self) -> LLMConfig:
+        '''
+        returns llm configuration 
+        
+        ## Returns: 
+        
+        llm_config: LLMConfig
+            the configuration class for LLM
+        '''
+        config = self.config
+        params = self.params
+        llm_config = LLMConfig(
+            data_path=config.data,
+            hf_token=config.HF_TOKEN, 
+            llm=params.llm.huggingface,
+            bit_4=params.llm.bit_4,
+            context_window=params.llm.context_window,
+            max_new_tokens=params.llm.max_new_tokens,
+            device=params.llm.device,
+            embedding=params.embedding.huggingface,
+            chunk_size=params.chunk_size
+        )
+        
+        return llm_config

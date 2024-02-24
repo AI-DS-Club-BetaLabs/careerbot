@@ -1,0 +1,12 @@
+llm:
+  huggingface: stabilityai/stablelm-zephyr-3b
+  bit_4: True
+  temperature: 0.8
+  context_window: 4096
+  max_new_tokens: 1024
+  device: auto
+
+embedding:
+  huggingface: sentence-transformers/all-mpnet-base-v2
+
+chunk_size: 1024

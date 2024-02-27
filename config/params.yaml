@@ -1,9 +1,9 @@
 llm:
-  huggingface: stabilityai/stablelm-zephyr-3b
+  huggingface: google/gemma-2b-it
   bit_4: True
   temperature: 0.8
-  context_window: 4096
-  max_new_tokens: 1024
+  context_window: 8192
+  max_new_tokens: 2048
   device: auto
 
 embedding:

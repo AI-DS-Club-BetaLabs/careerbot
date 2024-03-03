@@ -1,6 +1,10 @@
 # Ignore virtual environment folder
 GeminiBot/
-BetaLabs-AIML-CareerChatBot-RASA\myRASAChatBot/
+BetaLabs-AIML-CareerChatBot-RASA/myRASAChatBot/
+
+# .rasa Cache
+BetaLabs-AIML-CareerChatBot-RASA/Test/.rasa/
+
 
 # Ignore specific Python files
 Chatter_bot_chatbot.py

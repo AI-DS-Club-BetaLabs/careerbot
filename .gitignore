@@ -1,3 +1,20 @@
+# Ignore virtual environment folder
+GeminiBot/
+BetaLabs-AIML-CareerChatBot-RASA\myRASAChatBot/
+
+# Ignore specific Python files
+Chatter_bot_chatbot.py
+Learning_Chatbot.py
+long_responses.py
+main.py
+
+# Ignore JSON files
+intense.json
+knowledge_base.json
+
+# Ignore Jupyter Notebook file
+Transformer_based_chatbot.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

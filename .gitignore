@@ -1,3 +1,6 @@
+# Ignoring the git folder
+BetaLabs-AIML-CareerChatBot-RASA/.git/
+
 # Ignore virtual environment folder
 GeminiBot/
 BetaLabs-AIML-CareerChatBot-RASA/myRASAChatBot/

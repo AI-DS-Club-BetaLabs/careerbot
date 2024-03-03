@@ -1,0 +1,3 @@
+[submodule "BetaLabs-AIML-CareerChatBot-RASA"]
+	path = BetaLabs-AIML-CareerChatBot-RASA
+	url = https://github.com/Vishnu0107/RASA_Chatbot.git
